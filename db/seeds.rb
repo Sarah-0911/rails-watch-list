@@ -7,7 +7,7 @@
 Movie.destroy_all
 
 
-5.times do
+10.times do
   movies = Movie.create!(
     title: Faker::Movie.title,
     overview: Faker::Movie.quote,

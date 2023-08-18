@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :bookmarks, only: [:destroy]
   # Defines the root path route ("/")
   # root "articles#index"
+  delete '/lists', to: 'lists#destroy_all'
 end

@@ -21,10 +21,14 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
   end
 
+  def destroy_all
+    List.destroy_all
+    redirect_to lists_path
+  end
+
   private
 
   def list_params
     params.require(:list).permit(:name)
   end
-
 end

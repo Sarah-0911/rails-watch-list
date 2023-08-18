@@ -10,3 +10,20 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/navbar";
+@import "components/cards";
+
+
+.list {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #272838;
+  width: 140px;
+  border-radius: 5px;
+}
